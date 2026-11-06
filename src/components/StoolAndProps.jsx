@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Sparkles, BookOpen, UtensilsCrossed } from 'lucide-react';
 
 const TIFFIN_SURPRISES = [
