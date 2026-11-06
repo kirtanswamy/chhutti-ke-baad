@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 
 const CONFIG = {
   githubUrl: 'https://github.com/kirtanswamy/chhutti-ke-baad',
@@ -473,7 +473,7 @@ export default function App() {
     return () => clearTimeout(mummyTimer);
   }, [triggerMummyVoice]);
 
-  const handlePopKidCloud = () => {
+  const handlePopKidCloud = useCallback(() => {
     playBubblePopSound();
     setIsPopping(true);
 
@@ -494,7 +494,7 @@ export default function App() {
       setMummyScolding(false);
       setIsPopping(false);
     }, 250);
-  };
+  }, [volume]);
 
   // Mount Standalone YouTube Player (Starts on real Motu Patlu Hindi Episode!)
   useEffect(() => {
@@ -711,6 +711,7 @@ export default function App() {
     toggleMute,
     triggerMummyVoice,
     mummyScolding,
+    handlePopKidCloud,
   ]);
 
   const handleStoolClick = (e) => {
