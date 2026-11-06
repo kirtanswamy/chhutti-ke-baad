@@ -1,4 +1,3 @@
-import React from 'react';
 import { Volume2, VolumeX, Power } from 'lucide-react';
 
 export default function CrtTelevision({

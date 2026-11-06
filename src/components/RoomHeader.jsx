@@ -1,4 +1,3 @@
-import React from 'react';
 import { Sun, LampCeiling, Moon, Users } from 'lucide-react';
 
 const MODES = [
