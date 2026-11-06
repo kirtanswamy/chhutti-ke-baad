@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 
 const CONFIG = {
-  githubUrl: 'https://github.com/kirtanswamy', // <-- Update with your exact GitHub URL if different
+  githubUrl: 'https://github.com/kirtanswamy/chhutti-ke-baad',
   background: '/assets/room final.png',
   backgroundPosition: 'center 63%',
   scanlines: true,
