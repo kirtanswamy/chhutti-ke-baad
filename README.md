@@ -45,7 +45,6 @@ npm run preview
 src/
   App.jsx                 Experience orchestration and episode catalogue
   index.css               Global design system, room scene and motion
-  App.css                 Remaining app-level styles
   components/
     CrtTelevision.jsx     Reusable CRT television
     RoomHeader.jsx        Room atmosphere controls and heading
